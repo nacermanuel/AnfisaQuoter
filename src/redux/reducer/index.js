@@ -1,8 +1,10 @@
 const initialState = {
-    productos: [
-        {nombre: 'Shampoo 1', precio: 10},
-        {nombre: 'Crema 1', precio: 5},
-    ]
+    productos:
+        [
+            {nombre: 'Shampoo Gris', precio: 10.43},
+            {nombre: 'Crema Vital', precio: 5.63},
+            {nombre: 'Acondicionador Fuerte', precio: 6.78},
+        ]
   };
 
 const rootReducer = (state = initialState, action) => {
