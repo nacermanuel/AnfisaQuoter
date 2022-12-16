@@ -28,7 +28,7 @@ const rootReducer = (state = initialState, action) => {
         case 'ELIMINAR_COTIZACION':
             return {...state, cotizacion: [...state.cotizacion.filter((e)=> e.id !== action.payload)]}
         case 'ACTUALIZAR_CANTIDAD':
-            return {...state, cotizacion: [...state.cotizacion.filter((e)=> e.id !== action.payload.id), {...state.cotizacion.find((e)=> e.id === action.payload.id), cantidad: action.payload.value} ] }
+            return {...state, cotizacion: [...state.cotizacion.map((e) => ( e.id === action.payload.id ? {...e, cantidad: action.payload.value} : {...e}))] }
         default: return {...state}
     }
 };

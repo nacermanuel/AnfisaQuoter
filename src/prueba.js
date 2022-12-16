@@ -28,13 +28,12 @@ const id = 3
 // TIENES UN ARREGLO DE OBJETOS, COMO EDITAS SOLO 1 OBJETO DE LOS QUE ESTA DENTRO DEL ARREGLO
 // SI LO UNICO QUE TIENES ES UNA DE LAS PROPIEDADES DEL OBJETO
 
-// 
+// [...state.cotizacion.filter((e)=> e.id !== action.payload.id), {...state.cotizacion.find((e)=> e.id === action.payload.id), cantidad: action.payload.value} ]
 
 console.log(
     {...estado,
         arregloDOS: [
-            ...estado.arregloDOS.filter((e)=> e.id !==id),
-            {...estado.arregloDOS.find((e)=> e.id ===id), cantidad: 3}
+            ...estado.arregloDOS.map((e) => e.id),
         ]
 
     }  
