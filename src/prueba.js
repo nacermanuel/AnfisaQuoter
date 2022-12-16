@@ -21,3 +21,5 @@ if (estado.productos.find((e) => e.id === id)){
 } else{
     console.log('no esta')
 }
+
+//hol 
