@@ -1,4 +1,4 @@
-const initialState = {
+const estado = {
     productos:
         [
             {id:1, nombre: 'Shampoo KeraCare 500ml', precio: 10.43, img:'ph7.png', descripcion: 'Este es una leyenda descriptiva sobre lo magnifico que es este increible producto', bullets: ['esta es un increible reparador fuerte', 'Sus efectos son notados de manera inmediata', 'es un productos organica de la selva amazonica']},
@@ -11,24 +11,13 @@ const initialState = {
             {id:8, nombre: 'Loción Anticaída Bioexil 120ml', precio: 6.78, img:'ph7.png', descripcion: 'Este es una leyenda descriptiva sobre lo magnifico que es este increible producto', bullets: ['esta es un increible reparador fuerte', 'Sus efectos son notados de manera inmediata', 'es un productos organica de la selva amazonica']},
             {id:9, nombre: 'Shampoo Caviar 400ml', precio: 10.43, img:'ph7.png', descripcion: 'Este es una leyenda descriptiva sobre lo magnifico que es este increible producto', bullets: ['esta es un increible reparador fuerte', 'Sus efectos son notados de manera inmediata', 'es un productos organica de la selva amazonica']},
             {id:10, nombre: 'Acondicionador Caviar 400ml', precio: 15.32,  img:'ph7.png', descripcion: 'Este es una leyenda descriptiva sobre lo magnifico que es este increible producto', bullets: ['esta es un increible reparador fuerte', 'Sus efectos son notados de manera inmediata', 'es un productos organica de la selva amazonica']},
-
         ],
-    cotizacion: []
-  };
+}
 
-const rootReducer = (state = initialState, action) => {
-    switch (action.type){
-        case 'AGREGA_COTIZACION':
-            if(state.cotizacion.find((e)=> e.id === action.payload)){
-                alert("Este producto ya está agregado");
-                return {...state}
-            } else{
-                return {...state, cotizacion: [...state.cotizacion, state.productos.find((e)=> e.id === action.payload)]}
-            }
-        case 'ELIMINAR_COTIZACION':
-            return {...state, cotizacion: [...state.cotizacion.filter((e)=> e.id !== action.payload)]}
-        default: return {...state}
-    }
-};
+const id = 32
 
-export default rootReducer;
+if (estado.productos.find((e) => e.id === id)){
+    console.log('si esta')
+} else{
+    console.log('no esta')
+}

@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(233, 210, 227);
+
+}
+
+.divPrincipal{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.ContenedorProductos{
+    display: flex;
+    flex-flow: row wrap;
+    width: 85%;
+    padding: 10px;
+    gap: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagenPrueba {
+    max-width:250px;  
+    height: auto;  
+}

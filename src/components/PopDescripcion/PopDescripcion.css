@@ -1,0 +1,38 @@
+.Pop-Up{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-descriptivo{
+    background-color: rgb(233, 210, 227);
+    width: 600px;
+    height: 600px;
+    border-radius: 7%;
+    border: 2px solid #ffffff;
+    padding-left: 15px;
+}
+.contenedor-descriptivo-elementos{
+    display: flex;
+    flex-flow: column;
+}
+
+.botonAgregar{
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+    padding: 8px;
+    font-size: large;
+    box-shadow: 3px 3px 2px rgb(0 0 0 / 54%);
+}
+.botonAgregar:hover{
+
+    background-color: rgb(75, 105, 204);
+    color: aliceblue;
+}

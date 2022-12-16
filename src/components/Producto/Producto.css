@@ -1,6 +1,46 @@
 .ComponenteProducto{
-    border: 2px solid #263bb0;
-    background-color: bisque;
-    width: 250px;
-    height: 350px;
+    background-color: rgb(255, 150, 225);
+    width: 220px;
+    height: 330px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7%;
+    border: 2px solid #ffffff;
+}
+
+.ComponenteProducto:hover{
+    box-shadow: 0 0 18px rgb(0 0 0 / 54%);
+    background-color: rgb(243 194 229);
+}
+
+.imagenPro{
+    max-height: 150px;
+    width: auto; 
+}
+
+.textosProductos{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.divBotonesPro{
+    display: flex;
+    flex-flow: row;
+    gap: 5px;
+}
+
+.botonesProducto{
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+    padding: 8px;
+    box-shadow: 3px 3px 2px rgb(0 0 0 / 54%);
+}
+.botonesProducto:hover{
+
+    background-color: rgb(75, 105, 204);
+    color: aliceblue;
 }
