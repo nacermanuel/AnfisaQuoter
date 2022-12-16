@@ -51,9 +51,6 @@ export default function PopCotizacion(props) {
         dispatch({type: 'ACTUALIZAR_CANTIDAD', payload: {id: id , value: parseInt(event.target.value)}})
     }
 
-    // REVISAR COMO EVITAR QUE SE MUEVAN LAS FILAS CADA VEZ QUE CAMBIAMOS EL VALOR DE CANTIDAD
-    
-
     if(!props.estado) return null
     return (
     <>
@@ -83,13 +80,14 @@ export default function PopCotizacion(props) {
                                     <td>{e.nombre}</td>
                                     <td>{e.nombre}</td>
                                     <td>{e.precio}</td>
-                                    <td>{e.precio}</td>
+                                    <td>{e.cantidad * e.precio}</td>
                                 </tr> 
                                 
                                 ))
                             }
                         </tbody>
                     </table>
+                    <p>Total Producto: { ( productosCotizacion.length ? productosCotizacion.map((e) => ( e.cantidad * e.precio )).reduce((sum, acu) => sum + acu) : 0) }</p>
                 </div>    
         </div>
     

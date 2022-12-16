@@ -5,7 +5,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className='nav'>DESCARGAR CATALOGO PDF || XX PRODUCTOS ELEGIDOS || TOTAL COTIZADO $XX </nav>
+            <nav className='nav'> <h2>TOTAL COTIZADO $XX</h2> <button>Ver cotizacion</button> </nav> 
         </>
     )
 }

@@ -1,3 +1,11 @@
 .nav{
     background-color: aquamarine;
+    height: 45px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+
 }
