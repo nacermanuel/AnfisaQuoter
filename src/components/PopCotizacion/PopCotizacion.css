@@ -1,0 +1,28 @@
+table{
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+}
+table{
+  border: 3px solid;
+  background-color: aliceblue;
+  border-color: rgb(128, 121, 131);
+
+
+}
+
+th{
+  background-color: rgb(226, 157, 255);
+}
+tr {
+  border: 3px solid;
+  background-color: rgb(207, 245, 245);
+}
+
+.imagenMini{
+  max-height: 80px
+}
+
+
+  
+
