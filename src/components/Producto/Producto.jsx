@@ -12,7 +12,11 @@ const Producto = (props) => {
         dispatch(actions.agregaCotizacion(i))
     }
 
-//    onClick={()=> agregaCotizacion(props.todoProducto.id) } 
+    const multiFuncion = (id) => {
+        clickAgregar(id);
+        props.notificacion()
+    }
+
     return(
         <>
 
@@ -28,7 +32,7 @@ const Producto = (props) => {
                 </div> 
                 <div className="divBotonesPro">
                     <button onClick={event => props.descriptivo(props.todoProducto)} className='botonesProducto'>Ver Producto</button>
-                    <button onClick={()=> clickAgregar(props.todoProducto.id)} className='botonesProducto'>Agregar</button>
+                    <button onClick={()=> multiFuncion(props.todoProducto.id)} className='botonesProducto'>Agregar</button>
                 </div>
                 
             </div>

@@ -7,12 +7,16 @@ export default function Popup(props){
 
     const dispatch = useDispatch()
     
-    const clickAgregar = (i) => {
-        dispatch(actions.agregaCotizacion(i))
+    const clickAgregar = (id) => {
+        dispatch(actions.agregaCotizacion(id))
     }
     
-    if(!props.estado) return null
+    const multiFuncion = (id) => {
+        clickAgregar(id);
+        props.notificacion()
+    }
 
+    if(!props.estado) return null
 
     return(
         <>
@@ -46,7 +50,7 @@ export default function Popup(props){
                                         <h1> ${props.info.precio}</h1>
                                     </div>
                                     <div style={{display: 'flex', flexFlow: 'row', alignContent:'center', justifyContent:'center', width: '50%'}}>
-                                        <button onClick={()=> clickAgregar(props.info.id)} className="botonAgregar">Agregar Producto a la cotizacion</button>
+                                        <button onClick={()=> multiFuncion(props.info.id)} className="botonAgregar">Agregar Producto a la cotizacion</button>
                                     </div>
                                 </div>
                             </div>
