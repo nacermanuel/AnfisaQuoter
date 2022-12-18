@@ -4,6 +4,7 @@ import Producto from "../Producto/Producto";
 import './Home.css';
 import PopDescripcion from '../PopDescripcion/PopDescripcion';
 import PopCotizacion from "../PopCotizacion/PopCotizacion";
+import Navbar from "../NavBar/Navbar";
 
 
 const Home = (props) => {
@@ -19,9 +20,10 @@ const Home = (props) => {
 
     
     return(
+        <>
+        <Navbar boton={setPopcotizacion}/>
         <div className="divPrincipal">
             <h1>ESTE ES EL HOME</h1>
-            <button onClick={() => setPopcotizacion(true)}>Ver Cotización</button>
             <br></br>
             <div className="ContenedorProductos">
                 { productoRedux.map((e,i) => <Producto key={i} descriptivo={cambioPopdescripcion} todoProducto={e}/>)}
@@ -30,6 +32,7 @@ const Home = (props) => {
             <PopCotizacion estado={popCotizacion} cerrar={()=> setPopcotizacion(false) }/>
             
         </div>
+        </>
     )
 
 }
