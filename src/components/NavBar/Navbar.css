@@ -1,11 +1,35 @@
 .nav{
-    background-color: aquamarine;
-    height: 45px;
+    background-color: rgba(233, 147, 209, 0.95);
+    height: 60px;
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     position: fixed;
     width: 100%;
+    border-radius: 30px;
 
+}
+
+.textNav{
+    font-family: fantasy;
+    font-size: xxx-large;
+    letter-spacing: 2px;
+}
+
+.navBut{
+    padding: 5px 150px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+    font-family: monospace;
+    font-size: xx-large;
+    background-color: rgb(94, 66, 139);
+    color: azure;
+
+}
+
+.navBut:hover{
+    background-color: rgba(94, 66, 139, 0.205);
 }

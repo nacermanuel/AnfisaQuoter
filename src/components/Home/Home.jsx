@@ -32,7 +32,7 @@ const Home = (props) => {
         <Navbar boton={setPopcotizacion}/>
         <NotificationContainer/>
         <div className="divPrincipal">
-            <h1>ESTE ES EL HOME</h1>
+            <h1>CATÁLOGO EN LÍNEA - ESCOGE PEDIDO</h1>
             <br></br>
             <div className="ContenedorProductos">
                 { productoRedux.map((e,i) => <Producto key={i} descriptivo={cambioPopdescripcion} todoProducto={e} notificacion={notificacionAgregado}/>)}

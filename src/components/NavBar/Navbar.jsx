@@ -11,8 +11,8 @@ const Navbar = (props) => {
     return (
         <>
             <nav className='nav'> 
-            <h2>Total Productos: $ { ( productosCotizacion.length ? productosCotizacion.map((e) => ( e.cantidad * e.precio )).reduce((sum, acu) => sum + acu).toFixed(2) : 0) }</h2>
-                <button  onClick={() => props.boton(true)}>Ver cotizacion</button> 
+                <p className='textNav'>Total Productos: $ { ( productosCotizacion.length ? productosCotizacion.map((e) => ( e.cantidad * e.precio )).reduce((sum, acu) => sum + acu).toFixed(2) : 0) }</p>
+                <button className='navBut'  onClick={() => props.boton(true)}>Ver cotizacion</button> 
             </nav> 
         </>
     )
