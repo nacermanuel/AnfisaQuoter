@@ -33,7 +33,6 @@ const Home = (props) => {
         <NotificationContainer/>
         <div className="divPrincipal">
             <h1>ESTE ES EL HOME</h1>
-            <button onClick={() => notificacionAgregado() }>Pruba notificacion</button>
             <br></br>
             <div className="ContenedorProductos">
                 { productoRedux.map((e,i) => <Producto key={i} descriptivo={cambioPopdescripcion} todoProducto={e} notificacion={notificacionAgregado}/>)}
