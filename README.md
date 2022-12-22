@@ -6,10 +6,10 @@ If you own a small-business, where most of the sales process is done through Wha
 
 So far, what we have is the front-end / customer side of the product, where you can see the list of products, their details, select and remove what you want and see how much you will spend on the purchase.
 
-<img src='../anfisa_spa/public/gifs/gif1.gif' alt="gif1" height="380"/>
+<img src='https://github.com/nacermanuel/Katalogy/blob/main/public/gifs/gif1.gif' alt="gif1" height="380"/>
 <br/>
 <br/>
-<img src='../anfisa_spa/public/gifs/gif2.gif' alt="gif1" height="380"/>
+<img src='https://github.com/nacermanuel/Katalogy/blob/main/public/gifs/gif2.gif' alt="gif1" height="380"/>
 <br/>
 <br/>
 
